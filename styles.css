@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background: url('roman-building-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.8);
+    border-bottom: 5px solid gold;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #d4af37;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #999;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    margin: 10px 0;
+    border: 2px solid #2c3e50;
+    border-radius: 5px;
+}
+
+.sort-buttons {
+    margin: 10px 0;
+}
+
+button {
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #34495e;
+}
+
+.kaisar-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.kaisar-img {
+    width: 120px;
+    animation: bounce 2s infinite;
+}
+
+.kaisar-caption {
+    font-style: italic;
+    color: #b8860b;
+    background: rgba(255, 255, 255, 0.7);
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.gallery-item {
+    background: #ffffffcc;
+    border: 2px solid gold;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s;
+    box-shadow: 0 0 10px rgba(218, 165, 32, 0.3);
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery-item .info {
+    padding: 10px;
+    text-align: center;
+    background: rgba(218, 165, 32, 0.8);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

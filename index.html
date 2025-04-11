@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Pribadi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Portofolio Pribadi</h1>
+        <input type="text" id="search" placeholder="Cari gambar...">
+        <div class="sort-buttons">
+            <button onclick="sortGallery('name', 'asc')">Urutkan Nama Ascending</button>
+            <button onclick="sortGallery('name', 'desc')">Urutkan Nama Descending</button>
+            <button onclick="sortGallery('date', 'asc')">Urutkan Tanggal Ascending</button>
+            <button onclick="sortGallery('date', 'desc')">Urutkan Tanggal Descending</button>
+        </div>
+    </header>
+
+    <div class="kaisar-container">
+        <img src="kaisar-julian-cute.gif" alt="Kaisar Julian" class="kaisar-img">
+        <p class="kaisar-caption">Salve! Aku Julian, penjelajah waktu 🎖️</p>
+    </div>
+
+    <main>
+        <div id="gallery" class="gallery"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
